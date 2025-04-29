@@ -1,5 +1,6 @@
 import 'package:go_router/go_router.dart';
 import 'package:flutter/material.dart';
+import 'package:keanggotaan/features/auth/presentation/pages/forgot_password_page.dart';
 import 'package:keanggotaan/features/auth/presentation/pages/getting_started_page.dart';
 import 'package:keanggotaan/features/auth/presentation/pages/sign_in_page.dart';
 import 'package:keanggotaan/features/auth/presentation/pages/sign_up_page.dart';
@@ -17,6 +18,9 @@ final GoRouter appRouter = GoRouter(
     }),
     GoRoute(path: '/edit-profile', builder: (context, state) {
       return const EditProfilePage();
+    }),
+    GoRoute(path: '/forgot-password', builder: (context, state) {
+      return const ForgotPasswordPage();
     }),
   ],
 );

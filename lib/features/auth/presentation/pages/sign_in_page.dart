@@ -46,7 +46,9 @@ class _SignInPageState extends State<SignInPage> {
                 // context.read<SignInCubit>().signIn(email, password);
                 context.go('/profile');
               },
-              onForgotPassword: () {},
+              onForgotPassword: () {
+                context.push('/forgot-password');
+              },
               onRegister: () {
                 context.go('/sign-up');
               },
